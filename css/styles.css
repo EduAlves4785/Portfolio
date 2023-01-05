@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 .containerr{
     position:relative ;
     width:100%;
@@ -36,7 +41,16 @@
     width: 200px;
     height:50px;
     background-color:rgb(30,144,255) ;
+    border: none;
     transition: 0.5s;
+    animation:flutuar 3s ease-in-out infinite;
+    cursor: pointer;
+}
+
+@keyframes flutuar{
+    0%{transform: translate(0,0px);color: white;}
+    50%{transform: translate(0,10px);color: black;}
+    100%{transform: translate(0,-0px);color: white;}
 }
 
 footer{
@@ -59,9 +73,17 @@ footer{
     flex-direction: column;
 }
 
+
 .progress{
     width: 30em;
 }
+
+.progress>.progress-bar{
+    animation:anim1 1s;
+    transition: ease-in;
+    animation-direction:alternate-reverse ;
+}
+
 
 footer>div{
     width:7em;
@@ -97,7 +119,7 @@ footer>div{
 
 /*Projetos css*/
 .projetos-container{
-    padding: 1em;
+    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%; 
@@ -123,7 +145,6 @@ iframe{
     .projetos-container{
         grid-template-columns: 1fr;
         width: 100%;  
-        padding-left: 4em;
     }   
     .projeto-card{
         width:16em; 
