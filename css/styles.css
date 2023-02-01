@@ -56,7 +56,7 @@
 footer{
     width: 100%;
     height: 100px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     color:rgb(43, 43, 43);
@@ -64,6 +64,8 @@ footer{
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
+    margin: auto;
+    margin-top: 12rem;
 }
 
 .itens{
@@ -149,6 +151,10 @@ footer>div{
     .progress{
         width: 20em;
     }
+    .CardCompetencias{
+        margin:.6rem;
+        height: 12rem;
+    } 
 }
 
 /*Projetos css*/
