@@ -65,15 +65,16 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     margin: auto;
-    margin-top: 12rem;
+    margin-top: 2rem;
 }
 
 .itens{
-    width: 15rem;
+    width: 18rem;
     position:absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 5rem;
 }
 
 .itens>*{
@@ -97,6 +98,7 @@ footer{
     width: 16rem;
     height: 16rem;
     transition: .5s;
+    cursor: pointer;
 }
 
 .CardCompetencias:hover{
@@ -120,10 +122,14 @@ footer{
 
 
 footer>div{
-    width:7em;
+    width:18rem;
     height: 100px;
     margin:1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
 
 @media(max-width: 900px) {
     .texto{
@@ -155,6 +161,14 @@ footer>div{
         margin:.6rem;
         height: 12rem;
     } 
+
+    .footercompetencias{
+        margin-top: 12rem;
+    }
+
+    footer>div{
+        width:100%;
+    }
 }
 
 /*Projetos css*/
