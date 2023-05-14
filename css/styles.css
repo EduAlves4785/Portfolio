@@ -172,22 +172,117 @@ footer>div{
 }
 
 /*Projetos css*/
+.titulo-projetos{
+    margin: 1rem 1rem;
+}
+
 .projetos-container{
     padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     width: 100%; 
     height: 100%;
+    margin-top: 1rem;
+    border: .5px solid black;
+    display: flex;
+    overflow-x: auto;
+}
+
+@media(max-width: 900px) {
+    .projetos-container{
+        display: flex;
+        align-items: center;
+        height: 5rem;    
+    }
 }
 
 .projeto-card{
-    background-color: rgb(172, 172, 172);
-    width:28em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height:26em;
-    margin: .5em;
+    width: 13rem;
+    height: 10rem;
+    cursor: pointer;
+    transition: .3s;
+    filter: grayscale(1);
+    background-position: center; 
+    background-size: cover;
+    margin: 1rem;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
+@media(max-width: 900px){
+    .projeto-card{
+        width: 10rem;
+        height: 5rem;
+        background-size:100% 50%;
+    }
+}
+
+.projeto-card:hover{
+    box-shadow: -7px 0px 6px 6px rgba(0,0,0,0.75);
+}
+
+.card-footer{
+    background-color: rgb(30,144,255);
+    color: white;
+    width: 100%;
+    height: 3rem;
+    margin-top:7.95rem;
+    transition: .5s;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 900px){
+    .card-footer{
+        margin-top: 2rem;
+    }
+}
+
+
+.projeto-card>.card-footer>button{
+    border: none;
+    width: 4rem;
+    height: 2rem;
+    font-weight: 600;
     border-radius: 5px;
-    padding: .3em;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.projeto-card>.card-footer>button:hover{
+    border: .5px solid black;
+}
+
+.projeto-card:hover{
+    transition: .5s;
+    filter: grayscale(0);
+}
+
+.videos-container{
+    margin-top: 1rem;
+    width: 100%;
+    height:100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.videos-container>div{
+    width: 30rem;
+    height: 20rem;
+    margin: .5rem;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+
+@media(max-width: 900px){
+    .videos-container{
+        padding: 0;
+    }
+    .videos-container>div{
+        width: 11rem;
+    } 
 }
 
 iframe{
