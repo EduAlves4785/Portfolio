@@ -7,6 +7,12 @@ projetoCard1.addEventListener("mouseenter",()=>{
             <button id="acessa-projetos">Acessar</button>
         </div>
          `
+    const acessaProjetos=document.getElementById("acessa-projetos") 
+    acessaProjetos.addEventListener('click',()=>{
+        acessaProjetos.style.color="white"
+        acessaProjetos.style.backgroundColor="rgb(30,144,255)"
+    })   
+        
     document.getElementById("acessa-projetos").addEventListener('click',()=>{
         videosContainer.innerHTML=`
             <div class="card-video">
@@ -43,6 +49,12 @@ projetoCard2.addEventListener('mouseenter',()=>{
             <button id="acessa-projetos">Acessar</button>
         </div>
          `
+
+    const acessaProjetos=document.getElementById("acessa-projetos") 
+    acessaProjetos.addEventListener('click',()=>{
+            acessaProjetos.style.color="white"
+            acessaProjetos.style.backgroundColor="rgb(30,144,255)"
+        })     
     document.getElementById("acessa-projetos").addEventListener('click',()=>{
         videosContainer.innerHTML=`
             <div class="card-video">
@@ -70,6 +82,12 @@ projetoCard3.addEventListener('mouseenter',()=>{
             <button id="acessa-projetos">Acessar</button>
         </div>
          `
+
+    const acessaProjetos=document.getElementById("acessa-projetos") 
+    acessaProjetos.addEventListener('click',()=>{
+            acessaProjetos.style.color="white"
+            acessaProjetos.style.backgroundColor="rgb(30,144,255)"
+        })         
     document.getElementById("acessa-projetos").addEventListener('click',()=>{
         videosContainer.innerHTML=`
             <div class="card-video">
@@ -118,6 +136,11 @@ projetoCard4.addEventListener('mouseenter',()=>{
             <button id="acessa-projetos">Acessar</button>
         </div>
          `
+    const acessaProjetos=document.getElementById("acessa-projetos") 
+        acessaProjetos.addEventListener('click',()=>{
+            acessaProjetos.style.color="white"
+            acessaProjetos.style.backgroundColor="rgb(30,144,255)"
+        })     
     document.getElementById("acessa-projetos").addEventListener('click',()=>{
         videosContainer.innerHTML=`
             <div class="card-video">
@@ -142,6 +165,11 @@ projetoCard5.addEventListener('mouseenter',()=>{
             <button id="acessa-projetos">Acessar</button>
         </div>
          `
+        const acessaProjetos=document.getElementById("acessa-projetos") 
+        acessaProjetos.addEventListener('click',()=>{
+            acessaProjetos.style.color="white"
+            acessaProjetos.style.backgroundColor="rgb(30,144,255)"
+        }) 
     document.getElementById("acessa-projetos").addEventListener('click',()=>{
         videosContainer.innerHTML=`
             <div class="card-video">
