@@ -46,6 +46,11 @@
     margin: 1rem;
 }
 
+.content img{
+    width: 300px;
+    height: 120px;
+}
+
 @media (max-width: 768px) {
     .content{
         display: flex;
