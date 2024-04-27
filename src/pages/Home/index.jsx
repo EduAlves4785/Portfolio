@@ -12,7 +12,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 
 const Home = () => {
-  const [isMouseInside, setIsMouseInside] = useState(null);
+  const [isMouseInside, setIsMouseInside] = useState("sobre");
 
   const handleMouseEnter = (area) => {
     setIsMouseInside(area);
@@ -21,6 +21,7 @@ const Home = () => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
+      setIsMouseInside(id)
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -59,18 +60,19 @@ const Home = () => {
           </button>
         </Navigation>
         <div className="icones">
-          <a href="http://">
+          <a href="https://github.com/EduAlves4785">
             <FaGithub />
           </a>
-          <a href="http://">
+          <a href="https://www.linkedin.com/in/deveduardo-alves/">
             <FaLinkedin />
           </a>
-          <a href="http://">
+          <a href="mailto:edualvesbrito04@gmail.com">
             <IoIosMail />
           </a>
         </div>
       </Infos_div>
       <Content>
+      <h1>Sobre mim</h1>
         <SobreContainer id="sobre" onMouseEnter={() => handleMouseEnter("sobre")}>
           <p>
             Como desenvolvedor web, tenho expertise em projetos pessoais usando
@@ -80,6 +82,7 @@ const Home = () => {
             deram profundo entendimento das tecnologias, melhoraram minhas
             habilidades de resolução de problemas e design de código.
           </p>
+          <br />
           <p>
             Como freelancer, especializo-me em criar sites institucionais e
             landing pages, transformando visões dos clientes em realidade
@@ -89,6 +92,7 @@ const Home = () => {
             desafiadoras, impulsionando-me a buscar constante aprimoramento e
             contribuir de forma significativa para projetos inovadores.
           </p>
+          <br />
           <p>
             Minha experiência na área comercial foi fundamental para desenvolver
             habilidades de negociação e gestão de clientes. Aprendi a alinhar
@@ -98,12 +102,13 @@ const Home = () => {
             soluções inovadoras e eficazes para atender às suas expectativas.
           </p>
         </SobreContainer>
+        <h1>Minhas experiências</h1>
         <ExperienciasContainer id="experiencias"
           onMouseEnter={() => handleMouseEnter("experiencias")}
         >
           <div className="experiencia-content">
             <div className="dados-experiencia">
-              2023 - Presente<p>Estágiario . LITUS FIDC</p>
+              2023 - Presente<p>Estágiario . <a href="http://">LITUS FIDC</a></p>
             </div>
             <div className="experiencia-descricao">
               Durante meu estágio na LITUS FIDC, captei novos clientes através
@@ -119,7 +124,7 @@ const Home = () => {
           </div>
           <div className="experiencia-content">
             <div className="dados-experiencia">
-              2024 - Presente<p>FREELANCER . NEXUS DIGITAL</p>
+              2024 - Presente<p>FREELANCER . <a href="https://nexusdigitalsites.online/">NEXUS DIGITAL</a></p>
             </div>
             <div className="experiencia-descricao">
               Como freelancer, desenvolvo sites para prestadores de serviços e
@@ -139,8 +144,8 @@ const Home = () => {
             </div>
           </div>
         </ExperienciasContainer>
+        <h1>Principais projetos</h1>
         <ProjetosContainer id="projetos" onMouseEnter={() => handleMouseEnter("projetos")}>
-          <h1>Principais projetos</h1>
           <div className="projeto-box">
             <h1>React Autos</h1>
             <div className="video-box">
