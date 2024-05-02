@@ -35,9 +35,10 @@ export const Infos_div = styled.div`
   }
 
   .icones {
-    width: 20rem;
-    padding: 0.5rem;
-    height: 2rem;
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -55,13 +56,15 @@ export const Infos_div = styled.div`
   }
 
   @media (max-width: 768px) {
+    margin: 0;
+    padding: 1rem 0;
     width: 100%;
     height: auto;
     gap: 2rem;
     position: relative;
 
     .sobre {
-      width: 100%;
+      width: 80%;
 
       h1 {
         font-size: 30px;
@@ -70,7 +73,7 @@ export const Infos_div = styled.div`
     }
 
     .icones {
-      width: 100%;
+      width: 80%;
     }
   }
 `;
@@ -95,7 +98,7 @@ export const Navigation = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 80%;
   }
 `;
 
@@ -114,13 +117,12 @@ export const Content = styled.section`
   justify-content: space-around;
   gap: 2rem;
 
-
   @media (max-width: 768px) {
-    position: absolute;
+    position: relative;
     overflow: none;
     width: 100%;
     height: auto;
-    padding: 1rem;
+    padding:0;
     left: 0;
     margin: 0;
     align-items: center;
@@ -144,10 +146,12 @@ export const SobreContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    padding: .5rem;
+    width: 90%;
     font-size: 15px;
   }
 `;
+
 export const ExperienciasContainer = styled.div`
   width: 45rem;
   height: auto;
@@ -155,9 +159,9 @@ export const ExperienciasContainer = styled.div`
   flex-direction: column;
   gap: 2rem;
 
-  a{
-    color: #D0D1D3;
-    text-decoration:none;
+  a {
+    color: #d0d1d3;
+    text-decoration: none;
   }
 
   .experiencia-content {
@@ -166,7 +170,7 @@ export const ExperienciasContainer = styled.div`
     transition: 0.3s;
 
     &:hover {
-        box-shadow: 0px 20px 22px -15px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 20px 22px -15px rgba(0, 0, 0, 0.75);
       background-color: rgba(255, 255, 255, 0.06); /* Cor com transparência */
       backdrop-filter: blur(10px);
 
@@ -215,19 +219,21 @@ export const ExperienciasContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    padding: 0;
+    width: 95%;
     font-size: 15px;
 
     .dados-experiencia {
       width: 100%;
       font-weight: 400;
       font-size: 14px;
+      margin-bottom: .5rem;
     }
 
     .experiencia-descricao {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
       & div {
         gap: 0.2rem;
         display: grid;
@@ -235,7 +241,7 @@ export const ExperienciasContainer = styled.div`
         height: auto;
 
         & h4 {
-          width: 6rem;
+          width: 5rem;
           font-size: 12px;
           height: 3rem;
         }
@@ -270,7 +276,8 @@ export const ProjetosContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    padding: .5rem;
+    width: 90%;
     font-size: 15px;
   }
 `;
