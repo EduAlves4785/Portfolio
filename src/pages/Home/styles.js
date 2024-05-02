@@ -64,7 +64,12 @@ export const Infos_div = styled.div`
     position: relative;
 
     .sobre {
-      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 8rem;
+      width: 90%;
 
       h1 {
         font-size: 30px;
@@ -122,7 +127,7 @@ export const Content = styled.section`
     overflow: none;
     width: 100%;
     height: auto;
-    padding:0;
+    padding: 0;
     left: 0;
     margin: 0;
     align-items: center;
@@ -146,7 +151,7 @@ export const SobreContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: .5rem;
+    padding: 0.5rem;
     width: 90%;
     font-size: 15px;
   }
@@ -227,7 +232,7 @@ export const ExperienciasContainer = styled.div`
       width: 100%;
       font-weight: 400;
       font-size: 14px;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
 
     .experiencia-descricao {
@@ -276,7 +281,7 @@ export const ProjetosContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: .5rem;
+    padding: 0.5rem;
     width: 90%;
     font-size: 15px;
   }
