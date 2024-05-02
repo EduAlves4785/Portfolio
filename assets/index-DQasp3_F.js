@@ -128,7 +128,12 @@ Error generating stack: `+i.message+`
     position: relative;
 
     .sobre {
-      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 8rem;
+      width: 90%;
 
       h1 {
         font-size: 30px;
@@ -180,7 +185,7 @@ Error generating stack: `+i.message+`
     overflow: none;
     width: 100%;
     height: auto;
-    padding:0;
+    padding: 0;
     left: 0;
     margin: 0;
     align-items: center;
@@ -202,7 +207,7 @@ Error generating stack: `+i.message+`
   }
 
   @media (max-width: 768px) {
-    padding: .5rem;
+    padding: 0.5rem;
     width: 90%;
     font-size: 15px;
   }
@@ -281,7 +286,7 @@ Error generating stack: `+i.message+`
       width: 100%;
       font-weight: 400;
       font-size: 14px;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
 
     .experiencia-descricao {
@@ -328,7 +333,7 @@ Error generating stack: `+i.message+`
   }
 
   @media (max-width: 768px) {
-    padding: .5rem;
+    padding: 0.5rem;
     width: 90%;
     font-size: 15px;
   }
