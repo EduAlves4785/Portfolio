@@ -122,7 +122,7 @@ Error generating stack: `+i.message+`
   @media (max-width: 768px) {
     margin: 0;
     padding: 1rem 0;
-    width: 100%;
+    width: auto;
     height: auto;
     gap: 2rem;
     position: relative;
@@ -138,6 +138,10 @@ Error generating stack: `+i.message+`
       h1 {
         font-size: 30px;
         color: #fafafa;
+      }
+
+      p{
+        text-align: center;
       }
     }
 
