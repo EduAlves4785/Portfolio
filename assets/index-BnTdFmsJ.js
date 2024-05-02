@@ -99,9 +99,10 @@ Error generating stack: `+i.message+`
   }
 
   .icones {
-    width: 20rem;
-    padding: 0.5rem;
-    height: 2rem;
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -119,13 +120,15 @@ Error generating stack: `+i.message+`
   }
 
   @media (max-width: 768px) {
+    margin: 0;
+    padding: 1rem 0;
     width: 100%;
     height: auto;
     gap: 2rem;
     position: relative;
 
     .sobre {
-      width: 100%;
+      width: 80%;
 
       h1 {
         font-size: 30px;
@@ -134,7 +137,7 @@ Error generating stack: `+i.message+`
     }
 
     .icones {
-      width: 100%;
+      width: 80%;
     }
   }
 `,$y=Hn.div`
@@ -157,7 +160,7 @@ Error generating stack: `+i.message+`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 80%;
   }
 `,Ay=Hn.section`
   overflow: auto;
@@ -172,13 +175,12 @@ Error generating stack: `+i.message+`
   justify-content: space-around;
   gap: 2rem;
 
-
   @media (max-width: 768px) {
-    position: absolute;
+    position: relative;
     overflow: none;
     width: 100%;
     height: auto;
-    padding: 1rem;
+    padding:0;
     left: 0;
     margin: 0;
     align-items: center;
@@ -200,7 +202,8 @@ Error generating stack: `+i.message+`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    padding: .5rem;
+    width: 90%;
     font-size: 15px;
   }
 `,By=Hn.div`
@@ -210,9 +213,9 @@ Error generating stack: `+i.message+`
   flex-direction: column;
   gap: 2rem;
 
-  a{
-    color: #D0D1D3;
-    text-decoration:none;
+  a {
+    color: #d0d1d3;
+    text-decoration: none;
   }
 
   .experiencia-content {
@@ -221,7 +224,7 @@ Error generating stack: `+i.message+`
     transition: 0.3s;
 
     &:hover {
-        box-shadow: 0px 20px 22px -15px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 20px 22px -15px rgba(0, 0, 0, 0.75);
       background-color: rgba(255, 255, 255, 0.06); /* Cor com transparência */
       backdrop-filter: blur(10px);
 
@@ -270,19 +273,21 @@ Error generating stack: `+i.message+`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    padding: 0;
+    width: 95%;
     font-size: 15px;
 
     .dados-experiencia {
       width: 100%;
       font-weight: 400;
       font-size: 14px;
+      margin-bottom: .5rem;
     }
 
     .experiencia-descricao {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
       & div {
         gap: 0.2rem;
         display: grid;
@@ -290,7 +295,7 @@ Error generating stack: `+i.message+`
         height: auto;
 
         & h4 {
-          width: 6rem;
+          width: 5rem;
           font-size: 12px;
           height: 3rem;
         }
@@ -323,7 +328,8 @@ Error generating stack: `+i.message+`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    padding: .5rem;
+    width: 90%;
     font-size: 15px;
   }
 `;var Ph={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},Cf=rt.createContext&&rt.createContext(Ph),Hy=["attr","size","title"];function Wy(e,t){if(e==null)return{};var n=Qy(e,t),r,o;if(Object.getOwnPropertySymbols){var i=Object.getOwnPropertySymbols(e);for(o=0;o<i.length;o++)r=i[o],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function Qy(e,t){if(e==null)return{};var n={},r=Object.keys(e),o,i;for(i=0;i<r.length;i++)o=r[i],!(t.indexOf(o)>=0)&&(n[o]=e[o]);return n}function ol(){return ol=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},ol.apply(this,arguments)}function Pf(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(o){return Object.getOwnPropertyDescriptor(e,o).enumerable})),n.push.apply(n,r)}return n}function il(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]!=null?arguments[t]:{};t%2?Pf(Object(n),!0).forEach(function(r){Ky(e,r,n[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):Pf(Object(n)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(n,r))})}return e}function Ky(e,t,n){return t=Yy(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function Yy(e){var t=Gy(e,"string");return typeof t=="symbol"?t:String(t)}function Gy(e,t){if(typeof e!="object"||e===null)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(typeof r!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}function _h(e){return e&&e.map((t,n)=>rt.createElement(t.tag,il({key:n},t.attr),_h(t.child)))}function xs(e){return t=>rt.createElement(Xy,ol({attr:il({},e.attr)},t),_h(e.child))}function Xy(e){var t=n=>{var{attr:r,size:o,title:i}=e,l=Wy(e,Hy),a=o||n.size||"1em",u;return n.className&&(u=n.className),e.className&&(u=(u?u+" ":"")+e.className),rt.createElement("svg",ol({stroke:"currentColor",fill:"currentColor",strokeWidth:"0"},n.attr,r,l,{className:u,style:il(il({color:e.color||n.color},n.style),e.style),height:a,width:a,xmlns:"http://www.w3.org/2000/svg"}),i&&rt.createElement("title",null,i),e.children)};return Cf!==void 0?rt.createElement(Cf.Consumer,null,n=>t(n)):t(Ph)}function Zy(e){return xs({tag:"svg",attr:{viewBox:"0 0 496 512"},child:[{tag:"path",attr:{d:"M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"},child:[]}]})(e)}function Jy(e){return xs({tag:"svg",attr:{viewBox:"0 0 448 512"},child:[{tag:"path",attr:{d:"M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"},child:[]}]})(e)}function qy(e){return xs({tag:"svg",attr:{viewBox:"0 0 512 512"},child:[{tag:"path",attr:{d:"M460.6 147.3L353 256.9c-.8.8-.8 2 0 2.8l75.3 80.2c5.1 5.1 5.1 13.3 0 18.4-2.5 2.5-5.9 3.8-9.2 3.8s-6.7-1.3-9.2-3.8l-75-79.9c-.8-.8-2.1-.8-2.9 0L313.7 297c-15.3 15.5-35.6 24.1-57.4 24.2-22.1.1-43.1-9.2-58.6-24.9l-17.6-17.9c-.8-.8-2.1-.8-2.9 0l-75 79.9c-2.5 2.5-5.9 3.8-9.2 3.8s-6.7-1.3-9.2-3.8c-5.1-5.1-5.1-13.3 0-18.4l75.3-80.2c.7-.8.7-2 0-2.8L51.4 147.3c-1.3-1.3-3.4-.4-3.4 1.4V368c0 17.6 14.4 32 32 32h352c17.6 0 32-14.4 32-32V148.7c0-1.8-2.2-2.6-3.4-1.4z"},child:[]},{tag:"path",attr:{d:"M256 295.1c14.8 0 28.7-5.8 39.1-16.4L452 119c-5.5-4.4-12.3-7-19.8-7H79.9c-7.5 0-14.4 2.6-19.8 7L217 278.7c10.3 10.5 24.2 16.4 39 16.4z"},child:[]}]})(e)}const by=()=>{const[e,t]=z.useState("sobre"),n=o=>{t(o)},r=o=>{const i=document.getElementById(o);i&&(t(o),i.scrollIntoView({behavior:"smooth"}))};return D.jsxs(D.Fragment,{children:[D.jsxs(Fy,{children:[D.jsxs("div",{className:"sobre",children:[D.jsx("h1",{children:"Eduardo Alves"}),D.jsx("h3",{children:"Desenvolvedor Web"}),D.jsx("p",{children:"Desenvolvo aplicações completas, utilizando criação de API's e banco de dados"})]}),D.jsxs($y,{children:[D.jsx("button",{style:{color:e==="sobre"?"white":"gray"},onClick:()=>r("sobre"),children:"Sobre"}),D.jsx("button",{style:{color:e==="experiencias"?"white":"gray"},onClick:()=>r("experiencias"),children:"Experiências"}),D.jsx("button",{style:{color:e==="projetos"?"white":"gray"},onClick:()=>r("projetos"),children:"Projetos"})]}),D.jsxs("div",{className:"icones",children:[D.jsx("a",{href:"https://github.com/EduAlves4785",children:D.jsx(Zy,{})}),D.jsx("a",{href:"https://www.linkedin.com/in/deveduardo-alves/",children:D.jsx(Jy,{})}),D.jsx("a",{href:"mailto:edualvesbrito04@gmail.com",children:D.jsx(qy,{})})]})]}),D.jsxs(Ay,{children:[D.jsx("h1",{children:"Sobre mim"}),D.jsxs(Uy,{id:"sobre",onMouseEnter:()=>n("sobre"),children:[D.jsx("p",{children:"Como desenvolvedor web, tenho expertise em projetos pessoais usando JavaScript, Node.js, MySQL e React. Comecei com React, construindo interfaces modernas. Domino o backend com Node.js e MySQL para garantir a funcionalidade completa das aplicações. Esses projetos me deram profundo entendimento das tecnologias, melhoraram minhas habilidades de resolução de problemas e design de código."}),D.jsx("br",{}),D.jsx("p",{children:"Como freelancer, especializo-me em criar sites institucionais e landing pages, transformando visões dos clientes em realidade digital. Conduzo reuniões e ofereço suporte técnico, desenvolvendo habilidades sólidas de comunicação e trabalho em equipe. Minha paixão pelo desenvolvimento web é reforçada por experiências desafiadoras, impulsionando-me a buscar constante aprimoramento e contribuir de forma significativa para projetos inovadores."}),D.jsx("br",{}),D.jsx("p",{children:"Minha experiência na área comercial foi fundamental para desenvolver habilidades de negociação e gestão de clientes. Aprendi a alinhar minhas soluções tecnológicas com as demandas do mercado e dos usuários. Essa vivência conferiu-me uma perspectiva mais ampla sobre os desafios enfrentados pelos clientes, impulsionando-me a criar soluções inovadoras e eficazes para atender às suas expectativas."})]}),D.jsx("h1",{children:"Minhas experiências"}),D.jsxs(By,{id:"experiencias",onMouseEnter:()=>n("experiencias"),children:[D.jsxs("div",{className:"experiencia-content",children:[D.jsxs("div",{className:"dados-experiencia",children:["2023 - Presente",D.jsxs("p",{children:["Estágiario . ",D.jsx("a",{href:"http://",children:"LITUS FIDC"})]})]}),D.jsxs("div",{className:"experiencia-descricao",children:["Durante meu estágio na LITUS FIDC, captei novos clientes através de prospecção na plataforma VADU, conduzindo ligações e contatos por e-mail. Realizei análise de clientes em potencial e seus documentos para cadastro.",D.jsxs("div",{children:[D.jsx("h4",{children:"Pacote offcie"}),D.jsx("h4",{children:"Econodata"}),D.jsx("h4",{children:"VADU"})]})]})]}),D.jsxs("div",{className:"experiencia-content",children:[D.jsxs("div",{className:"dados-experiencia",children:["2024 - Presente",D.jsxs("p",{children:["FREELANCER . ",D.jsx("a",{href:"https://nexusdigitalsites.online/",children:"NEXUS DIGITAL"})]})]}),D.jsxs("div",{className:"experiencia-descricao",children:["Como freelancer, desenvolvo sites para prestadores de serviços e pequenos negócios, realizando prospecção de clientes em redes sociais. Conduzo reuniões e análises de projetos com clientes, garantindo alinhamento das expectativas. Ofereço suporte e manutenção contínuos de sites para garantir sua funcionalidade e qualidade.",D.jsxs("div",{children:[D.jsx("h4",{children:"HTML"}),D.jsx("h4",{children:"CSS"}),D.jsx("h4",{children:"JAVASCRIPT"}),D.jsx("h4",{children:"React Js"}),D.jsx("h4",{children:"Next JS"}),D.jsx("h4",{children:"Google Analytics"})]})]})]})]}),D.jsx("h1",{children:"Principais projetos"}),D.jsxs(Vy,{id:"projetos",onMouseEnter:()=>n("projetos"),children:[D.jsxs("div",{className:"projeto-box",children:[D.jsx("h1",{children:"React Autos"}),D.jsx("div",{className:"video-box",children:D.jsx("iframe",{src:"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7045530165820436480",height:"100%",width:"100%",frameborder:"0",allowfullscreen:"",title:"Publicação incorporada"})})]}),D.jsxs("div",{className:"projeto-box",children:[D.jsx("h1",{children:"Banco Demo"}),D.jsx("div",{className:"video-box",children:D.jsx("iframe",{src:"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7029823013273448448",height:"100%",width:"100%",frameborder:"0",allowfullscreen:"",title:"Publicação incorporada"})})]}),D.jsxs("div",{className:"projeto-box",children:[D.jsx("h1",{children:"Form TypeScript"}),D.jsx("div",{className:"video-box",children:D.jsx("iframe",{src:"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7071998889284747264",height:"100%",width:"100%",frameborder:"0",allowfullscreen:"",title:"Publicação incorporada"})})]})]})]})]})},e1=Cg([{path:"/Portfolio",element:D.jsx(by,{})}]);Bp(document.getElementById("root")).render(D.jsx(z.StrictMode,{children:D.jsx(Dg,{router:e1})}));
