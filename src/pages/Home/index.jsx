@@ -72,34 +72,22 @@ const Home = () => {
         </div>
       </Infos_div>
       <Content>
-      <h1>Sobre mim</h1>
+        <h1>Sobre mim</h1>
         <SobreContainer id="sobre" onMouseEnter={() => handleMouseEnter("sobre")}>
           <p>
-            Como desenvolvedor web, tenho expertise em projetos pessoais usando
-            JavaScript, Node.js, MySQL e React. Comecei com React, construindo
-            interfaces modernas. Domino o backend com Node.js e MySQL para
-            garantir a funcionalidade completa das aplicações. Esses projetos me
-            deram profundo entendimento das tecnologias, melhoraram minhas
-            habilidades de resolução de problemas e design de código.
+            Sou Desenvolvedor Backend com experiência em JavaScript, Node.js, MySQL e React, atuando em projetos que vão desde a construção de APIs e sistemas integrados a bancos de dados até o desenvolvimento de interfaces modernas e responsivas.
           </p>
           <br />
           <p>
-            Como freelancer, especializo-me em criar sites institucionais e
-            landing pages, transformando visões dos clientes em realidade
-            digital. Conduzo reuniões e ofereço suporte técnico, desenvolvendo
-            habilidades sólidas de comunicação e trabalho em equipe. Minha
-            paixão pelo desenvolvimento web é reforçada por experiências
-            desafiadoras, impulsionando-me a buscar constante aprimoramento e
-            contribuir de forma significativa para projetos inovadores.
+            Atualmente, trabalho como Técnico de Suporte e Implantação, onde além de gerenciar bancos de dados (Oracle, Firebird e PostgreSQL), também fui responsável pela refatoração completa de um site interno, melhorando código e usabilidade. Essa vivência me trouxe forte conhecimento em sistemas críticos e em garantir estabilidade e performance em ambientes de alta demanda.
           </p>
           <br />
           <p>
-            Minha experiência na área comercial foi fundamental para desenvolver
-            habilidades de negociação e gestão de clientes. Aprendi a alinhar
-            minhas soluções tecnológicas com as demandas do mercado e dos
-            usuários. Essa vivência conferiu-me uma perspectiva mais ampla sobre
-            os desafios enfrentados pelos clientes, impulsionando-me a criar
-            soluções inovadoras e eficazes para atender às suas expectativas.
+            Minha trajetória inclui ainda experiência como freelancer, criando sites institucionais e landing pages, e atuação na área comercial, que fortaleceu minhas habilidades de comunicação, negociação e alinhamento de soluções às necessidades dos usuários.
+          </p>
+          <br />
+          <p>
+            Busco oportunidades como Desenvolvedor Backend (ou Fullstack) para aplicar minhas habilidades em sistemas escaláveis, seguros e de alta performance, sempre com foco em boas práticas de desenvolvimento, aprendizado contínuo e entrega de valor.
           </p>
         </SobreContainer>
         <h1>Minhas experiências</h1>
@@ -108,23 +96,24 @@ const Home = () => {
         >
           <div className="experiencia-content">
             <div className="dados-experiencia">
-              2023 - Presente<p>Estágiario . <a href="http://">LITUS FIDC</a></p>
+              2025 - Presente<p>Téc. Suporte e Implantação . <a href="https://nexusdigitalsites.online/">MEDILAB SISTEMAS</a></p>
             </div>
             <div className="experiencia-descricao">
-              Durante meu estágio na LITUS FIDC, captei novos clientes através
-              de prospecção na plataforma VADU, conduzindo ligações e contatos
-              por e-mail. Realizei análise de clientes em potencial e seus
-              documentos para cadastro.
+              Gerencia chamados críticos, garantindo resolução eficaz e mitigação de impactos em ambientes sensíveis.
+              Planeja e executa projetos de implantação e integração de sistemas em clínicas e hospitais.
+              Conduz treinamentos técnicos e mantém relacionamento estratégico com clientes, promovendo melhorias contínuas.
               <div>
-                <h4>Pacote offcie</h4>
-                <h4>Econodata</h4>
-                <h4>VADU</h4>
+                <h4>HTML</h4>
+                <h4>CSS</h4>
+                <h4>Oracle, PostgreSQL, Firebird</h4>
+                <h4>React Js</h4>
+                <h4>RIS, PACS</h4>
               </div>
             </div>
           </div>
           <div className="experiencia-content">
             <div className="dados-experiencia">
-              2024 - Presente<p>FREELANCER . <a href="https://nexusdigitalsites.online/">NEXUS DIGITAL</a></p>
+              2024 - 2025<p>FREELANCER . <a href="https://nexusdigitalsites.online/">NEXUS DIGITAL</a></p>
             </div>
             <div className="experiencia-descricao">
               Como freelancer, desenvolvo sites para prestadores de serviços e
@@ -147,6 +136,32 @@ const Home = () => {
         <h1>Principais projetos</h1>
         <ProjetosContainer id="projetos" onMouseEnter={() => handleMouseEnter("projetos")}>
           <div className="projeto-box">
+            <h1>Folha de ponto</h1>
+            <div className="video-box">
+              <iframe
+                src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7378254026213249024"
+                height="100%"
+                width="100%"
+                frameborder="0"
+                allowfullscreen=""
+                title="Publicação incorporada"
+              ></iframe>
+            </div>
+          </div>
+          <div className="projeto-box">
+            <h1>Banco Demo - Java</h1>
+            <div className="video-box">
+              <iframe
+                src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7349621019717828609"
+                height="100%"
+                width="100%"
+                frameborder="0"
+                allowfullscreen=""
+                title="Publicação incorporada"
+              ></iframe>
+            </div>
+          </div>
+          <div className="projeto-box">
             <h1>React Autos</h1>
             <div className="video-box">
               <iframe
@@ -160,7 +175,7 @@ const Home = () => {
             </div>
           </div>
           <div className="projeto-box">
-            <h1>Banco Demo</h1>
+            <h1>Banco Demo- Node.js</h1>
             <div className="video-box">
               <iframe
                 src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7029823013273448448"

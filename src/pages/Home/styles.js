@@ -190,7 +190,7 @@ export const ExperienciasContainer = styled.div`
   }
 
   .dados-experiencia {
-    width: 25rem;
+    width: 100%;
     height: 2rem;
     gap: 1rem;
     color: #d9d9d9;
